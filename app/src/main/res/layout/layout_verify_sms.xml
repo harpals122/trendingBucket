@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/crossImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="@dimen/value_20dp"
+        android:src="@drawable/ic_cross_normal" />
+    <ImageView
+        android:id="@+id/imgd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crossImgView"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/value_20dp"
+        android:src="@drawable/ic_promo_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/imgd"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:id="@+id/linearLayout">
+
+        <com.trending.trending_bucket.util.FloatLabel
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_20dp"
+            android:hint="Enter reset code from sms"
+            android:inputType="phone"
+            android:textColorHint="@color/purple_color_2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/value_30dp"
+            android:layout_marginTop="@dimen/value_5dp"
+            android:background="@color/bar_color" />
+
+        <TextView
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/value_20dp"
+            style="@style/btnSelection"
+            android:text="Confirm"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
