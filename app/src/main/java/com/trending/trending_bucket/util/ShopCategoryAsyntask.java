@@ -43,7 +43,7 @@ public class ShopCategoryAsyntask extends AsyncTask<Void, Void, String> {
     @Override
     protected void onPreExecute() {
         Shopcategoryinterface.shopcategoryprogress();
-        login_url = "http://theownthoughts.com/trending/shopcategories.php";
+        login_url = "http://quiz8tnow.com/trending/shopcategories.php";
     }
 
     @Override

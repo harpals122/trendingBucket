@@ -34,7 +34,7 @@ this.shopinterface=shopinterface;
 
     @Override
     protected void onPreExecute() {
-        login_url = "http://theownthoughts.com/trending/shoplist.php";
+        login_url = "http://quiz8tnow.com/trending/shoplist.php";
         shopinterface.shopprogress();
     }
 

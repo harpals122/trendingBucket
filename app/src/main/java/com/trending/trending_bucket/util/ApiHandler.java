@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import static com.trending.trending_bucket.util.constants.URL_APB_API;
+import static com.trending.trending_bucket.util.constants.ROOT_URL;
 
 /**
  * @author prabh
@@ -122,7 +122,7 @@ public class ApiHandler {
         if (requestType == REQUEST_GET) {
 
             Request request = new Request.Builder()
-                    .url(URL_APB_API + urlKey)
+                    .url(ROOT_URL + urlKey)
                     .build();
 
             client.newCall(request).enqueue(new Callback() {
@@ -159,7 +159,7 @@ public class ApiHandler {
 
             formBody = formEncodingBuilder.build();
             Request request = new Request.Builder()
-                    .url(URL_APB_API + urlKey)
+                    .url(ROOT_URL + urlKey)
                     .post(formBody)
                     .build();
 
@@ -197,7 +197,7 @@ public class ApiHandler {
      * @brief print the coming values along with url
      */
     private void printUrl(List<String> keyList) {
-        String url = URL_APB_API + urlKey + "?";
+        String url = ROOT_URL + urlKey + "?";
         for (int i = 0; i < keyList.size(); i++) {
             url = url + keyList.get(i) + "=" + contentValues.getAsString(keyList.get(i));
             if (i != keyList.size() - 1) {
@@ -214,7 +214,7 @@ public class ApiHandler {
     public void printUrl(ContentValues values) {
         Set<String> keys = values.keySet();
         List<String> keyList = new ArrayList<String>(keys);
-        String url = URL_APB_API + urlKey + "?";
+        String url = ROOT_URL + urlKey + "?";
         for (int i = 0; i < keyList.size(); i++) {
             url = url + keyList.get(i) + "=" + values.getAsString(keyList.get(i));
             if (i != keyList.size() - 1) {

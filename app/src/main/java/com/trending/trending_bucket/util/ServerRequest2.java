@@ -67,7 +67,7 @@ public class ServerRequest2 {
 
         @Override
         protected void onPreExecute() {
-            register_url = "http://theownthoughts.com/trending/registeruser.php";
+            register_url = "http://quiz8tnow.com/trending/registeruser.php";
         }
 
         @Override
@@ -156,7 +156,7 @@ public class ServerRequest2 {
 
         @Override
         protected void onPreExecute() {
-            login_url = "http://theownthoughts.com/trending/confirmnumber.php";
+            login_url = "http://quiz8tnow.com/trending/confirmnumber.php";
         }
 
 

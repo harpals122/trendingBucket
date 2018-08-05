@@ -38,7 +38,7 @@ public class CategoryAsyntask extends AsyncTask<Void, Void, String> {
     @Override
     protected void onPreExecute() {
         categoryinterface.categoryprogress();
-        login_url = "http://theownthoughts.com/trending/allcategories.php";
+        login_url = "http://quiz8tnow.com/trending/allcategories.php";
     }
 
     @Override
