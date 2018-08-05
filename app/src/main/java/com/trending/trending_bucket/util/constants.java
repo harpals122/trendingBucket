@@ -74,7 +74,7 @@ public class constants {
     public static final double DUMMY_LOCATION_LONGITUDE = 90.4261766;
 
     //api url
-    public static final String URL_APB_API = "http://theownthoughts.com/trending/api/";
+    public static final String ROOT_URL = "http://quiz8tnow.com/trending/api/";
     //json fields
     public static final String JF_DATA = "data";
     public static final String JF_ID = "user_id";

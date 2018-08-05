@@ -37,7 +37,7 @@ public class notificationAsyntask extends AsyncTask<Void, Void, String> {
 
     @Override
     protected void onPreExecute() {
-        login_url = "http://theownthoughts.com/trending/notifications.php";
+        login_url = "http://quiz8tnow.com/trending/notifications.php";
     }
 
     @Override

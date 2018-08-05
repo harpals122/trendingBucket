@@ -33,7 +33,7 @@ public class ProductsAsyntask extends AsyncTask<Void, Void, String> {
     @Override
     protected void onPreExecute() {
         productinterface.productprogress();
-        login_url = "http://theownthoughts.com/trending/getproductsmain.php";
+        login_url = "http://quiz8tnow.com/trending/getproductsmain.php";
     }
 
     @Override
